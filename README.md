@@ -300,8 +300,6 @@ docker run -d -p 8080:8080 --name starwars-app starwars-challenge
 
 La aplicación queda disponible en `http://localhost:8080`, igual que corriéndola local sin Docker.
 
-> ⚠️ Si corrés la app en Docker, recordá pasar `jwt.secret` como variable de entorno en vez de dejarla en `application.properties` (ver [Consideraciones para producción](#consideraciones-para-producción)).
-
 ---
 
 ## Estructura del proyecto
