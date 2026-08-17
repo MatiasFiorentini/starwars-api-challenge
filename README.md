@@ -2,7 +2,11 @@
 
 API REST desarrollada en **Java 21 + Spring Boot** que integra con la [SWAPI (Star Wars API)](https://www.swapi.tech/documentation) para exponer información de **People**, **Films**, **Starships** y **Vehicles** del universo Star Wars, con listado paginado, filtrado por ID y/o nombre, autenticación segura mediante JWT, cache en memoria, documentación interactiva con Swagger, y una batería de tests unitarios y de integración.
 
-> 🔗 **Demo desplegada:** _`<pegar acá la URL de Render una vez desplegado>`_
+> 🔗 **Demo desplegada:** _`https://starwars-api-challenge.onrender.com`_
+
+> ⚠️ **Nota:** el servicio usa el plan gratuito de Render, que se "duerme" tras
+> 15 minutos de inactividad. El primer request puede tardar 30-60 segundos
+> en responder mientras el servicio se reactiva; los siguientes son normales.
 
 ---
 
@@ -214,6 +218,12 @@ Con la aplicación corriendo, la documentación completa e interactiva está dis
 
 ```
 http://localhost:8080/swagger-ui.html
+```
+
+Tambien puede probar la documentacion interactiva desde render
+
+```
+https://starwars-api-challenge.onrender.com/swagger-ui.html
 ```
 
 Desde ahí se puede:
