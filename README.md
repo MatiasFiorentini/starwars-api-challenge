@@ -276,7 +276,7 @@ mvn test
 | Tipo | Ubicación | Qué prueban |
 |---|---|---|
 | Unitarios | `mapper/*Test.java` | Transformación de DTOs externos a DTOs propios, sin dependencias |
-| Unitarios | `service/impl/*Test.java` | Lógica de negocio, con `SwapiClient` mockeado (Mockito) |
+| Unitarios | `service/*Test.java` | Lógica de negocio, con `SwapiClient` mockeado (Mockito) |
 | Unitarios | `security/JwtServiceTest.java` | Generación, extracción y validación de tokens JWT |
 | Integración | `controller/*Test.java` | Flujo HTTP completo (`MockMvc`), incluyendo seguridad real (`JwtAuthFilter`), validaciones y manejo de errores |
 
