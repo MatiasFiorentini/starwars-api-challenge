@@ -235,20 +235,24 @@ Desde ahí se puede:
 
 ## Consola de la base de datos (H2)
 
-Para inspeccionar visualmente los usuarios registrados:
+La consola de H2 está deshabilitada por defecto (incluida la demo desplegada).
+Para habilitarla, corré la aplicación localmente con el perfil `dev`:
 
-```
-http://localhost:8080/h2-console
-```
+### Cómo habilitarla
 
-Datos de conexión:
+**Desde tu IDE (recomendado):** configurá la variable de entorno
+`SPRING_PROFILES_ACTIVE=dev` en la configuración de ejecución de
+`ChallengeApplication`, y corré la app normalmente.
+
+Una vez activo el perfil, accedé a: http://localhost:8080/h2-console
+
+Datos de conexión (válidos únicamente en este contexto de desarrollo local):
 
 | Campo | Valor |
 |---|---|
-| Driver Class | `org.h2.Driver` |
-| JDBC URL | `jdbc:h2:mem:challenge_db` |
-| User Name | `sa` |
-| Password | *(vacío)* |
+| JDBC URL | jdbc:h2:mem:challenge_db |
+| User Name | sa |
+| Password | (vacío) |
 
 ---
 
